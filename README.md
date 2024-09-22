@@ -5,13 +5,4 @@ Basic weather app built with react, you can search all cities
 
 ![](screenshot.png)
 
-### Install Dependencies
-```sh
-$ npm install 
-```
-
-### Build the project
-```sh
-$ npm run build
-```
-
+> This Weather Application is created by an Ai.
