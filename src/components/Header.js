@@ -8,7 +8,6 @@ const handleKeyPress=(e)=>{
             getWeatherData('','',e.target.value)
         )
     }
-    
 }
 
     return (
@@ -19,7 +18,7 @@ const handleKeyPress=(e)=>{
             <div className="col-md-4 ">
                 <input type="text" 
                 className="form-control bg-transparent text-white  mt-5 mb-5"
-                placeholder="Write a city like (new york)" 
+                placeholder="Enter your city name" 
                 onKeyPress={handleKeyPress}
                 />
             </div>

@@ -24,7 +24,7 @@ function App() {
       });
     } else {
       console.log(
-        "Si no me das permiso, no puedo obtener la localizacion de tu city"
+        "If you don't give me permission, I can't get the location of your city."
       );
       getWeatherData(location.latitude, location.longitude,'');
     }
@@ -50,22 +50,16 @@ function App() {
         region: data.location.region,
         country: data.location.country,
         wind_speed: data.current.wind_speed,
-        pressure: data.current.pressure,
-        precip: data.current.precip,
         humidity: data.current.humidity,
         img: data.current.weather_icons,
       });
       
     } catch (error) {
-        console.log('no se pudo')
+        console.log(console.error);
     }
-    
-    
-
   };
 
   return(
-    
       <div className="container ">
         <Header getWeatherData={getWeatherData}/>
         <DisplayWeatherData {...weatherData} />

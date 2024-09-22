@@ -7,8 +7,6 @@ const DisplayWeatherData = ({
   region,
   country,
   wind_speed,
-  pressure,
-  precip,
   humidity,
   img,
 }) => {
@@ -33,14 +31,6 @@ const DisplayWeatherData = ({
         <div className="col-md-3 weather-info">
           <h3 className="wind">Wind Speed </h3>
           <h2>{wind_speed}</h2>
-        </div>
-        <div className="col-md-3 weather-info ">
-          <h3 className="pressure">Pressure</h3>
-          <h2>{pressure}</h2>
-        </div>
-        <div className="col-md-3 weather-info ">
-          <h3 className="precipitation">Precipitation</h3>
-          <h2>{precip}</h2>
         </div>
         <div className="col-md-3 weather-info ">
           <h3 className="humidity">Humidity</h3>
